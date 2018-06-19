@@ -29,7 +29,6 @@
 
 	<context:property-placeholder
 		location="
-		classpath:redis.properties,
 		classpath:jdbc.properties,
 		classpath:parameters.properties" />
 
@@ -185,6 +184,7 @@
 		<property name="defaultEncoding" value="UTF-8" />
 		<property name="cacheSeconds" value="120" />
 	</bean>
+
 
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

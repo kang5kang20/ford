@@ -55,13 +55,8 @@
 	</properties>
 
 	<dependencies>
-	<!--  
-		<dependency>
-    <groupId>com.aliyun.oss</groupId>
-    <artifactId>aliyun-sdk-oss</artifactId>
-    <version>2.8.2</version>
-</dependency>
-  -->
+		<!-- <dependency> <groupId>com.aliyun.oss</groupId> <artifactId>aliyun-sdk-oss</artifactId> 
+			<version>2.8.2</version> </dependency> -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
@@ -75,6 +70,14 @@
 			<!-- 表示开发的时候引入，发布的时候不会加载此包 -->
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<classifier>jdk15</classifier>
+			<version>2.4</version>
+		</dependency>
+		
 		<!-- JavaEE依赖 -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -289,42 +292,38 @@
 			<version>4.0.5</version>
 		</dependency>
 
-		<!--springmvc validation框架 
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>1.1.0.Final</version>
-		</dependency>-->
+		<!--springmvc validation框架 <dependency> <groupId>javax.validation</groupId> 
+			<artifactId>validation-api</artifactId> <version>1.1.0.Final</version> </dependency> -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>4.3.0.Final</version>
-		</dependency> 
-		<!--  
-		<dependency>
-			<groupId>com.alipay</groupId>
-			<artifactId>alipay-sdk-java</artifactId>
-			<version>3.0.0</version>
 		</dependency>
-		-->
-		 <dependency>
-            <groupId>org.quartz-scheduler</groupId>
-            <artifactId>quartz</artifactId>
-            <version>2.3.0</version>
-         </dependency>
+		<!-- <dependency> <groupId>com.alipay</groupId> <artifactId>alipay-sdk-java</artifactId> 
+			<version>3.0.0</version> </dependency> -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
+		</dependency>
 		
-<dependency>
-    <groupId>commons-io</groupId>
-    <artifactId>commons-io</artifactId>
-    <version>2.2</version>
-</dependency>
-		
-<dependency>
-    <groupId>commons-fileupload</groupId>
-    <artifactId>commons-fileupload</artifactId>
-    <version>1.3.1</version>
-</dependency>
-		
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
 		
 	</dependencies>
 
